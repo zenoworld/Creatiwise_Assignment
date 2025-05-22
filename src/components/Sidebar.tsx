@@ -21,7 +21,7 @@ export default function Sidebar() {
   const [isKeywordOpenAmazon, setIsKeywordOpenAmazon] = useState(false);
 
   return (
-    <aside className="w-64 bg-white border-r px-4 py-6">
+    <aside className="w-64 bg-white border-r px-4 py-6 overflow-y-auto">
       <h1 className="text-4xl flex justify-center items-center font-bold mb-6">abun</h1>
 
       <Collapsible open={isKeywordOpenAmazon} onOpenChange={setIsKeywordOpenAmazon} className="w-full flex justify-center items-center mb-2">
