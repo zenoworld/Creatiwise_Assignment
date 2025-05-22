@@ -18,10 +18,23 @@ import {
 
 export default function Sidebar() {
   const [isKeywordOpen, setIsKeywordOpen] = useState(false);
+  const [isKeywordOpenAmazon, setIsKeywordOpenAmazon] = useState(false);
 
   return (
     <aside className="w-64 bg-white border-r px-4 py-6">
       <h1 className="text-4xl flex justify-center items-center font-bold mb-6">abun</h1>
+
+      <Collapsible open={isKeywordOpenAmazon} onOpenChange={setIsKeywordOpenAmazon} className="w-full flex justify-center items-center mb-2">
+        <CollapsibleTrigger asChild>
+          <Button variant="ghost" className=" justify-between rounded-4xl border-2 border-gray-300 bg-amber-500">
+            <div className="flex items-center">
+              amazon.com
+            </div>
+            {isKeywordOpenAmazon ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+          </Button>
+        </CollapsibleTrigger>
+      </Collapsible>
+
       <nav className="space-y-2 ">
 
         <Collapsible open={isKeywordOpen} onOpenChange={setIsKeywordOpen}>
