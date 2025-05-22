@@ -24,26 +24,30 @@ function TableArticle() {
           <TableHead>Publish</TableHead>
         </TableRow>
       </TableHeader>
+
+
       <TableBody>
-        {articles.map((article, idx) => (
-          <TableRow key={idx}>
-            <TableCell><Checkbox /></TableCell>
-            <TableCell>{article.title}</TableCell>
-            <TableCell>{article.keyword}</TableCell>
-            <TableCell>{article.words}</TableCell>
-            <TableCell>{article.createdOn}</TableCell>
-            <TableCell>
-              <Button variant="outline">View</Button>
-            </TableCell>
-            <TableCell>
-              <img
-                src="/word_press.png"
-                alt="WordPress"
-                className="h-5 mx-auto cursor-pointer"
-              />
-            </TableCell>
-          </TableRow>
-        ))}
+        {
+          articles.map((article, idx) => (
+            <TableRow key={idx}>
+              <TableCell><Checkbox /></TableCell>
+              <TableCell>{article.title}</TableCell>
+              <TableCell>{article.keyword}</TableCell>
+              <TableCell>{article.words}</TableCell>
+              <TableCell>{article.createdOn}</TableCell>
+              <TableCell>
+                <Button variant="outline">View</Button>
+              </TableCell>
+              <TableCell>
+                <img
+                  src="/word_press.png"
+                  alt="WordPress"
+                  className="h-5 mx-auto cursor-pointer"
+                />
+              </TableCell>
+            </TableRow>
+          ))
+        }
       </TableBody>
     </Table>
   );
