@@ -22,7 +22,7 @@ export default function Sidebar() {
   return (
     <aside className="w-64 bg-white border-r px-4 py-6">
       <h1 className="text-4xl flex justify-center items-center font-bold mb-6">abun</h1>
-      <nav className="space-y-2">
+      <nav className="space-y-2 ">
 
         <Collapsible open={isKeywordOpen} onOpenChange={setIsKeywordOpen}>
           <CollapsibleTrigger asChild>
@@ -35,7 +35,7 @@ export default function Sidebar() {
             </Button>
           </CollapsibleTrigger>
 
-          <CollapsibleContent className="ml-6 mt-2 space-y-2">
+          <CollapsibleContent className="ml-6 mt-2 space-y-2 ">
             <Button variant="ghost" className="w-full justify-start gap-2">
               Create Article
             </Button>
