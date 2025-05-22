@@ -23,7 +23,7 @@ export default function Dashboard() {
             </Tabs>
             <Input
               placeholder="Search for Title & Keywords..."
-              className="mt-4 max-w-sm"
+              className="mt-2 max-w-sm"
             />
           </CardHeader>
 
